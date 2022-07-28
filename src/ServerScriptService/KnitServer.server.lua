@@ -26,8 +26,6 @@ end
 for _, v in ipairs(ServerScriptService.Components:GetDescendants()) do
 	if v:IsA("ModuleScript") then
 		local vModule = require(v)
-		-- Component.new({Tag = vModule.Tag, Extensions = {vModule}})
-		-- print('Tested')
 	end
 end
 

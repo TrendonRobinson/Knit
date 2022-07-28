@@ -18,7 +18,7 @@ end
 -- Load all components:
 for _, v in ipairs(ReplicatedStorage.Components:GetDescendants()) do
 	if v:IsA("ModuleScript") then
-		local vModule = require(v)
+		require(v)
 	end
 end
 
